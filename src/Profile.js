@@ -1,9 +1,19 @@
 import React from 'react';
 
-const Profile = () => (
-  <div>
-    <img src="https://avatars3.githubusercontent.com/u/50599564?s=40&v=4" alt="profile pic" />
-    <h1>Marmie Lemon</h1>
+const Profile = ({ person }) => (
+  <div className="profile-wrapper">
+    {console.log(person)}
+    <div className="profile-header">
+      <img className="profile-pic" src={person.imgPath} alt="profile pic" />
+      <h1 className="profile-heading">{person.firstName} {person.lastName}</h1>
+    </div>
+    <ul className="profile-repositories">
+{
+    person.repositories.map((repo) => (
+  <li key={repo.url}><a className="profile-repo-link" href={repo.url}>{repo.name}</a></li>
+ ))
+  }
+    </ul>
   </div>
 );
 
