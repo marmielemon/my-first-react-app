@@ -1,6 +1,7 @@
 
 .profiles {
-  display: flex;
+   width: 100%;
+
 
   color: #808080;
 
@@ -11,10 +12,6 @@
   border-radius: 50%;
 }
 
-.profile-heading {
-  font-size: 20px;
-
-}
 
 .profile-wrapper {
  background-color: white;
@@ -23,6 +20,14 @@
  padding-bottom: 50px;
  padding-left: 30px;
  margin-left: 20px;
+ flex: 1;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #282c34;
 }
 
 .profile-repo-link {
@@ -32,4 +37,10 @@
 
 .profile-repo-link:hover {
   color: white;
+}
+
+@media (min-width: 600px) {
+  .profiles {
+    display: flex;
+  }
 }
