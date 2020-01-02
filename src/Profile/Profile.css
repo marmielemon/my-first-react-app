@@ -39,33 +39,30 @@
   color: white;
 }
 
-@media (min-width: 600px) {
-  .profiles {
-    display: flex;
+@media (min-width: 500px) {
+  .profile-wrapper {
+    background-color: white;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
   }
+    .profile-header {
+      font-size: 10px;
+    }
 }
 
 @media (min-width: 600px) {
   .profiles {
+    display: flex;
     width: 75%;
   }
 }
 
-@media (min-width: 500px) {
-  .profile-wrapper {
-    background-color: white;
-    padding-top: 40px;
-    padding-right: 20px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 70px;
-    margin-right: 70px;
-
-  }
-}
-
 @media (min-width: 600px) {
   .profile-wrapper {
     background-color: white;
@@ -74,18 +71,10 @@
     padding-bottom: 40px;
     padding-left: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-left: 10px;
     margin-right: 10px;
 
-  }
-}
-
-
-
-@media (min-width: 500px) {
-  .profile-header {
-    font-size: 10px;
   }
 }
 
@@ -93,11 +82,7 @@
   .profile-header {
     font-size: 15px;
   }
-}
-
-@media (min-width: 800px){
-  .profile-wrapper {
-    -webkit-flex-direction: row;
+  .profiles {
     flex-direction: row-reverse;
   }
 }
