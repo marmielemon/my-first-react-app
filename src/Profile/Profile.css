@@ -2,7 +2,6 @@
 .profiles {
   width: 100%;
   color: #808080;
-
 }
 
 .profile-pic {
@@ -33,6 +32,7 @@
 .profile-repo-link {
   color: #FFA500;
   text-decoration: none;
+  font-family: 'PatuaOne-Regular';
 }
 
 .profile-repo-link:hover {
